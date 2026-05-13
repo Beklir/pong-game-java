@@ -1,10 +1,7 @@
 package org.example;
 
-import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -57,7 +54,7 @@ public class Main extends Application {
 
 //        -----------Controls---------
 
-        Controller controller = new Controller(primaryStage, scene, scoreboard, ball, leftPaddle, rightPaddle);
+        Controller controller = new Controller(scene, scoreboard, ball, leftPaddle, rightPaddle);
         controller.play();
 
     }
